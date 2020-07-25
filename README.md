@@ -1,2 +1,2 @@
 # RealPhone
-Mobile features showing page pure HTML and CSS
+Mobile features showing webpage pure HTML and CSS
