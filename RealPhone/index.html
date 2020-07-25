@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="target-densitydpi=device-dpi">
+    <meta name="viewport" content="user-scalable=yes">
+    
+    <meta name="viewport" content="minimum-scale=0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <div class="main">
+  <nav>
+      <div class="logo">
+         <img src="img/logo.png" width="100px" height="75px "  >
+      </div>
+     <div class="nav-links">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">LAPTOPS</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+            <li><a href="#">CART</a></li> 
+        </ul>
+
+     </div>
+  </nav>
+  <div class="information">
+     <div class="overlay">
+
+     </div>
+     <img src="img/mobile.png" alt="img" class="mobile">
+    <div id="circle">
+        <div class="features one">
+            <img src="img/chip.png" alt="chip">
+            <div>
+                <h1>Processor</h1>
+                <p>Up to 4-core Intel Core i7 processor</p>
+            </div>
+        </div>
+        <div class="features two">
+            <img src="img/display.png" alt="display">
+            <div>
+                <h1>Display</h1>
+                <p>13.3-inch Retina display1</p>
+            </div>
+        </div>
+        <div class="features three">
+            <img src="img/electric-keyboard.png" alt="keyboard">
+            <div>
+                <h1>Keyboard</h1>
+                <p>Backlit Magic Keyboard</p>
+            </div>
+        </div>
+        <div class="features four">
+            <img src="img/hardware.png" alt="hardware">
+            <div>
+                <h1>Storage</h1>
+                <p>Up to 16GB memory
+                    Up to 2TB storage2</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="controls">
+   <img src="img/up-arrow.png" alt="up" id="upbtn">
+   <h3>Features</h3>
+   <img src="img/up-arrow.png" alt="down" id="downbtn">
+  </div>
+     </div>
+     <script>
+         var circle=document.getElementById("circle")
+         var upbtn=document.getElementById("upbtn")
+         var downbtn=document.getElementById("downbtn")
+
+         var rotatevalue=circle.style.transform;
+         var rotatesum;
+         upbtn.onclick=function()
+         {
+          rotatesum=rotatevalue+ "rotate(-90deg)";
+          circle.style.transform=rotatesum;
+          rotatevalue=rotatesum;
+          
+         }
+         downbtn.onclick=function()
+         {
+          rotatesum=rotatevalue+ "rotate(90deg)";
+          circle.style.transform=rotatesum;
+          rotatevalue=rotatesum;
+         }
+     </script>
+</body>
+</html>
